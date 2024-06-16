@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', 'sans-serif';
+}
+
+li {
+	list-style: none;
+}
+
+.container {
+	margin-top: 100px;
+}
+
+.addTask {
+	width: 40%;
+	margin: 0 auto;
+	max-width: 1280px;
+}
+
+.addTask form {
+	width: 100%;
+}
+
+.task-title input {
+	border-radius: 5px;
+	width: 100%;
+	border: 0;
+	padding: 10px 20px;
+	font-size: 1.5vw;
+	border: 1px solid #000;
+}
+
+.task-title {
+
+}
+
+.taskOptionContainer {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.taskOptionContainer .taskOption {
+  display: flex;
+	justify-content: flex-start;
+	column-gap: 1vw;
+	margin-top: 20px;
+}
+
+.taskOptionContainer .taskStatus {
+	margin-left: auto;
+	padding: 10px 10px;
+	font-size: 1vw;
+}
+
+.taskOptionContainer li {
+	font-size: 1vw;
+	padding: 0.2vw 0.8vw;
+	background-color: #00000005;
+	color: #000;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.taskOptionContainer .submit {
+	cursor: pointer;
+	background: blue;
+	color: #fff;
+	font-size: 1vw;
+	padding: 10px 8px;
+	border-radius: 5px;
+	outline: none;
+	border: 2px solid blue;
+	margin-left: 1vw;
+	transition: all ease-in .3s;
+}
+
+.taskOptionContainer .submit:hover {
+	background-color: transparent;
+	color: blue;
+}
+
+
+.taskStatusStage {
+	width: 80%;
+	margin: 0 auto;
+	max-width: 1280px;
+	display: flex;
+	margin-top: 2vw;
+	justify-content: space-between;
+}
+
+.todoTitle,.progressTitle, .doneTitle {
+	display: flex;
+	align-items: center;
+	column-gap: 0.5vw;
+}
+
+.todo,
+.inprogress,
+.done {
+	flex-basis: 30%;
+}
+
+.progressTitle img {
+	width: 35px;
+	height: 35px;
+}
+
+.todoTitle img {
+	width: 35px;
+	height: 35px;
+}
+
+.doneTitle img {
+	width: 35px;
+	height: 35px;
+}
+
+.box {
+	box-shadow: 0 0 1px 1px #d7d1d1;
+	background-color: #fff;
+	height: 4vw;
+	padding: 0.5vw 1vw;
+	margin-top: 1vw;
+}
+
+.box .title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.box .title  img {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+
+.box .title span {
+	font-size: 1.1vw;
+	text-transform: capitalize;
+	display: block;
+	text-align: center;
+}
+
+.box ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.7vw;
+	column-gap: 1vw;
+	/* margin-top: 10px; */
+
+}
+
+.box li {
+	font-size: 1vw;
+	padding: 0.2vw 0.8vw;
+	background-color: #21efef;
+	color: #000;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
